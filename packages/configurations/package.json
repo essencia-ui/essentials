@@ -1,0 +1,8 @@
+{
+  "name": "@essencia-ui/configurations",
+  "version": "1.0.0",
+  "author": "Bruno Santos",
+  "license": "MIT",
+  "main": "./src",
+  "types": "./src/types"
+}

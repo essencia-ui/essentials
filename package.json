@@ -1,0 +1,39 @@
+{
+  "name": "essential",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Bruno Santos",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lerna:clean": "lerna clean --yes && lerna exec -- rm -rf dist",
+    "lerna:bootstrap": "lerna bootstrap --use-workspaces",
+    "lerna:build": "lerna run build --stream",
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "initialize": "yarn install && yarn lerna:clean && yarn lerna:bootstrap",
+    "dev": "yarn storybook:start",
+    "build": "yarn lerna:build"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/vue3": "^6.4.19",
+    "@types/node": "^17.0.23",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "babel-loader": "^8.2.4",
+    "lerna": "^4.0.0",
+    "storybook": "^6.4.19",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vue-loader": "^16.8.3",
+    "vue-tsc": "^0.29.8"
+  }
+}

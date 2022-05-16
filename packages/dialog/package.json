@@ -1,5 +1,5 @@
 {
-  "name": "@essencia-ui/button",
+  "name": "@essencia-ui/vue-dialog",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Bruno Santos",
@@ -9,12 +9,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/button.umd.js",
-  "module": "./dist/button.es.js",
+  "main": "./dist/dialog.umd.js",
+  "module": "./dist/dialog.es.js",
   "exports": {
     ".": {
-      "import": "./dist/button.es.js",
-      "require": "./dist/button.umd.js"
+      "import": "./dist/dialog.es.js",
+      "require": "./dist/dialog.umd.js"
     }
   },
   "scripts": {

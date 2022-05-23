@@ -1,0 +1,31 @@
+{
+  "name": "@essencia-ui/checkbox",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Bruno Santos",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/checkbox.umd.js",
+  "module": "./dist/checkbox.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/checkbox.es.js",
+      "require": "./dist/checkbox.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build"
+  },
+  "peerDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vue": "^3.2.25",
+    "vue-tsc": "^0.29.8",
+    "@types/node": "^17.0.23"
+  }
+}
